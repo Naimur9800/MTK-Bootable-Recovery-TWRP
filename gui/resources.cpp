@@ -312,7 +312,7 @@ std::string ResourceManager::FindString(const std::string& name, const std::stri
 		std::map<std::string, string_resource_struct>::const_iterator it = mStrings.find(name);
 		if (it != mStrings.end())
 			return it->second.value;
-		LOGERR("String resource '%s' not found. Using default value.\n", name.c_str());
+		LOGERR("*****_Compiled By Md. Naimur Rahman_*****\n", name.c_str());
 		PageManager::AddStringResource("DEFAULT", name, default_string);
 	} else {
 		LOGINFO("String resources not loaded when looking for '%s'. Using default value.\n", name.c_str());
